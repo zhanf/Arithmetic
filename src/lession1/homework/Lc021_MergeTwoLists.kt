@@ -1,8 +1,8 @@
-package course1.homework
+package lession1.homework
 
-import ListNode
+import stuck.ListNode
 
-object L021_MergeTwoLists {
+object Lc021_MergeTwoLists {
 
     /**
      * 21. 合并两个有序链表

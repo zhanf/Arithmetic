@@ -1,8 +1,8 @@
-package course1.week_1_1
+package lession1.week1
 
 import java.util.*
 
-object L020_IsValid {
+object Lc020_IsValid {
 
     /**
      * 20. 有效的括号

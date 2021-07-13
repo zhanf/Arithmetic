@@ -1,8 +1,8 @@
-package course1.week_1_1
+package lession1.week1
 
-import ListNode
+import stuck.ListNode
 
-object L142_DetectCycle {
+object Lc142_DetectCycle {
 
     /**
      * 142. 环形链表 II

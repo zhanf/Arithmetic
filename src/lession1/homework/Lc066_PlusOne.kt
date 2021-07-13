@@ -1,6 +1,6 @@
-package course1.homework
+package lession1.homework
 
-object L066_PlusOne {
+object Lc066_PlusOne {
 
     @JvmStatic
     fun main(args: Array<String>) {

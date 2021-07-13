@@ -1,6 +1,6 @@
-package course1.week_1_1
+package lession1.week1
 
-object L026_RemoveDuplicates {
+object Lc026_RemoveDuplicates {
     /**
      * 26. 删除有序数组中的重复项
      */

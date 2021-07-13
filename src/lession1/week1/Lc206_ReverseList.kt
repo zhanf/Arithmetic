@@ -1,8 +1,8 @@
-package course1.week_1_1
+package lession1.week1
 
-import ListNode
+import stuck.ListNode
 
-object L206_ReverseList {
+object Lc206_ReverseList {
 
     /**
      * 206. 反转链表

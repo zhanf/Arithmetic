@@ -1,6 +1,6 @@
-package course1.week_1_1
+package lession1.week1
 
-object L088_MergeArray {
+object Lc088_MergeArray {
     /**
      * 88. 合并有序数组
      */

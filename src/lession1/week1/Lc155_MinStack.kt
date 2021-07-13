@@ -1,7 +1,7 @@
-package course1.week_1_1
+package lession1.week1
 import java.util.*
 
-object L155_MinStack {
+object Lc155_MinStack {
     /**
      * 155. 最小栈
      */

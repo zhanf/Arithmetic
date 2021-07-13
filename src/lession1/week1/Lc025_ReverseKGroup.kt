@@ -1,8 +1,8 @@
-package course1.week_1_1
+package lession1.week1
 
-import ListNode
+import stuck.ListNode
 
-object L025_ReverseKGroup {
+object Lc025_ReverseKGroup {
 
     /**
      * 25. K 个一组翻转链表

@@ -1,8 +1,8 @@
-package course1.week_1_1
+package lession1.week1
 
 import java.util.*
 
-object L150_EvalRPN {
+object Lc150_EvalRPN {
 
     @JvmStatic
     fun main(args: Array<String>) {

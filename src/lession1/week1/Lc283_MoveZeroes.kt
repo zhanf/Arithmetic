@@ -1,6 +1,6 @@
-package course1.week_1_1
+package lession1.week1
 
-object L283_MoveZeroes {
+object Lc283_MoveZeroes {
 
     /**
      * 283. 移动零

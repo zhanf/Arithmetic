@@ -10,6 +10,7 @@ public class Lc098_IsValidBST {
      * 验证二叉搜索树
      */
     public boolean isValidBST(TreeNode root) {
+//        return validBST(root,Long.MIN_VALUE,Long.MAX_VALUE);
 
         //中序遍历
         if (null == root) return true;

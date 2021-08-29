@@ -4,27 +4,53 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Lc046_Permute {
-    List<List<Integer>> ans = new ArrayList();
-    List<Integer> set = new ArrayList();
+    //所有结果集合
+    List<List<Integer>> ans = new ArrayList<>();
+    //单个结果集合
+    List<Integer> tmp = new ArrayList<>();
+    //是否被访问
+    boolean[] visited;
+    //原数组
+    int[] num;
+    //原数组长度
+    int n;
 
+    /**
+     * 46. 全排列
+     *
+     * @param nums
+     * @return
+     */
     public List<List<Integer>> permute(int[] nums) {
-        findSubsets(0,nums);
+        //模板，初始化
+        n = nums.length;
+        num = new int[nums.length];
+        for (int i = 0; i < n; i++) num[i] = nums[i];
+        visited = new boolean[n];
+        dsf(0);
         return ans;
     }
 
-    private void findSubsets(int i, int[] nums) {
-        if (i == nums.length) {
-            //copy
-            if (set.size() == nums.length){
-                ans.add(new ArrayList<Integer>(set));
-            }
+    //层数
+    private void dsf(int depth) {
+        if (n == depth) {
+            ans.add(new ArrayList<>(tmp));
             return;
         }
-        //不选
-        findSubsets(i + 1, nums);
-        set.add(nums[i]);
-        //选
-        findSubsets(i + 1, nums);
-        set.remove(set.size() - 1);
+
+        for (int index = 0; index < n; index++) {
+            //已经访问过了，调到下一个
+            if (visited[index]) continue;
+            //已经访问过了
+            visited[index] = true;
+            //记录值
+            tmp.add(num[index]);
+            //递归
+            dsf(depth + 1);
+
+            //还原现场
+            tmp.remove(tmp.size() - 1);
+            visited[index] = false;
+        }
     }
 }

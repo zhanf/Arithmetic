@@ -1,3 +1,3 @@
 package stuck
 
-class ListNode(val `val`: Int, var next: ListNode? = null)
+class ListNode(public val `val`: Int, public var next: ListNode? = null)
